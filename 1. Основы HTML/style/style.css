@@ -1,0 +1,201 @@
+body {
+    height: 1000px;
+    max-width: 100%;
+    margin: 0;
+    font-family: 'Prompt', 'Roboto' sans-serif;
+    color: black;
+    background: linear-gradient(#A9CFD2, #D8F0F5) no-repeat;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*container
+=========================*/
+
+.container {
+    max-width: 100%;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+
+
+/*header
+=========================*/
+
+.header {
+
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'roboto', sans-serif;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #B6C1C2;
+}
+
+.icon {
+    padding-left: 30px;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+}
+
+
+
+.search {
+    border-radius: 15px;
+    padding: 5px 0;
+    outline: none;
+    margin: 0 0 15px 15px;
+    border: white;
+}
+
+/*nav
+=========================*/
+
+.navi {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+#nav{
+    font-family: 'prompt', sans-serif;
+
+}
+
+#nav li{
+    float:left; /* все ссылки идут слева на право */
+    position: relative;
+    list-style:none; /* убираем точки */
+    background:#C1DEE4;
+    width:270px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+#nav a{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-family: 'prompt', sans-serif;
+    text-decoration:none;
+    display:block; /* делаем блочным элементов тег "a" */
+    padding:1px;
+    color:#000000;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+#active a, #nav li:hover > a{
+    background:#89a0a5;
+
+}
+
+#nav ul {
+    visibility:hidden; /* скрываем выпадающее меню */
+    padding:0;
+    position:absolute;
+
+
+}
+
+#nav li:hover > ul{
+    visibility:visible; /* показываем выпадающее меню при наведении */
+    position: absolute;
+
+}
+
+#nav ul a{
+    padding:7px; /* делаем отступы выпадающего меню меньше от основного */
+
+}
+
+#nav ul li:hover{
+    background:#89a0a5;
+
+}
+
+
+/*main
+=========================*/
+
+.main_img {
+    margin: 93px 0 0 4px;
+}
+
+
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+    position:absolute;
+ top:115px;
+ right:120px;
+ width:850px;
+}
+
+.features__item {
+    width: 33.33333%;
+    padding: 0 40px;
+    margin: 1px 0;
+
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 1px;
+    width: 125px;
+    height: 155px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+
+
+
+
+
+
+
+
+
+
