@@ -4,27 +4,29 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
  * Employee example object
  * hireDate - from 01/01/2011 to 01/01/2019
  * birthday - from 01/01/1981 to 01/01/1993
- * salary - from 10000 to 35000 
+ * salary - from 10000 to 35000
  */
  var employee = {
-	name: '',
-	surname: '',
-	hireDate: '2/14/2013',
-	salary: 20000,
-	gender: 'male',
-	birthday: '01/12/1990',
-	position: 'engineer',
-	department: 'UX'
+    name: '',
+    surname: '',
+    hireDate: '2/14/2013',
+    salary: 20000,
+    gender: 'male',
+    birthday: '01/12/1990',
+    position: 'engineer',
+    department: 'UX'
 }
 
+/*
 function yourFunction(employees) {
   const result = [];
-	/* Write your code here */
+     Write your code here
   return result;
 }
 
  // should show the result
 console.log(yourFunction(employees));
+*/
 
 
 
@@ -32,22 +34,106 @@ console.log(yourFunction(employees));
  * Example function
  * Finds employees who has max salaries
  */
-function exampleFunction(employees) {
-	var maxSalary = 10000;
-	for (let i = 0; i < employees.length; i++) {
-		if (employees[i].salary > maxSalary) {
-			maxSalary = employees[i].salary;
-		}
-	}
-	const result = [];
-	for (let i = 0; i < employees.length; i++) {
-		if (employees[i].salary === maxSalary) {
-			result.push(employees[i]);
-		}
-	}
-	return result;
+/*function exampleFunction(employees) {
+    var maxSalary = 10000;
+    for (let i = 0; i < employees.length; i++) {
+        if (employees[i].salary > maxSalary) {
+            maxSalary = employees[i].salary;
+        }
+    }
+    const result = [];
+    for (let i = 0; i < employees.length; i++) {
+        if (employees[i].salary === maxSalary) {
+            result.push(employees[i]);
+        }
+    }
+    return result;
+}*/
+
+ /*вариант 14*/
+
+// задача 1
+
+function function1(employees) {
+    const result = [];
+    const salarys = 27000;
+    let counter = 0;
+    for (let i = 0; i < employees.length; i++) {
+        if (employees[i].department == "DB" && employees[i].salary > salarys){
+            employee = employees[i];
+            result[counter] = employee;
+            counter++;
+        }
+
+    }
+    for (let i = 0; i < result.length; i++){
+        for(let j = 0; j < result.length; j++){
+            let one = new Date(result[i].birthday)
+            let two = new Date(result[j].birthday)
+            if(one < two){
+                let temporary = result[i];
+                result[i] = result[j];
+                result[j] = temporary;
+            }
+        }
+    }
+    for (let i = 0; i < result.length; i++) {
+        console.log(result[i]);
+    }
+}
+function1(employees);
+
+ function exFunction(employees, employeee){
+    for (let i = 0; i < employeee.length; i++) {
+        for (let j = 0; j < employeee.length; j++) {
+            if(JSON.stringify(employeee[i]) == JSON.stringify(employeee[j]) && i != j){
+                    employeee.splice(j, 1);
+            }
+        }
+    }
+    return employeee
+ }
+
+// задача 2
+
+function function2(employees)
+{
+    const resultName = [];
+
+    const result = [];
+    for(let i = 0; i < employees.length; i++)
+    {
+        if(employees[i].gender == "female")
+        {
+            resultName.push(employees[i])
+        }
+    }
+    resultName.sort(function(a,b)
+    {
+        if ( a.name < b.name ) return -1;
+        if ( a.name < b.name ) return 1;
+
+    })
+    for(let i = 0; i < resultName.length - 1; i++)
+    {
+        if(resultName[i].name != resultName[i + 1].name)
+        {
+            result.push(resultName[i])
+        }
+
+    }
+    if(result[result.length - 1 ] != resultName[resultName.length - 1])
+    {
+        result.push(resultName[resultName.length - 1])
+    }
+    return result;
 }
 
-// uncomment to observe example
-console.log(exampleFunction(employees));
 
+console.log(function1(employees));
+console.log(function2(employees));
+
+
+
+// uncomment to observe example
+/*console.log (extraFunction(employees, employeeAmount));*/
