@@ -55,83 +55,50 @@ console.log(yourFunction(employees));
 // задача 1
 
 function function1(employees) {
-    const result = [];
-    const salarys = 27000;
-    let counter = 0;
-    for (let i = 0; i < employees.length; i++) {
-        if (employees[i].department == "DB" && employees[i].salary > salarys){
-            employee = employees[i];
-            result[counter] = employee;
-            counter++;
-        }
 
-    }
-    for (let i = 0; i < result.length; i++){
-        for(let j = 0; j < result.length; j++){
-            let one = new Date(result[i].birthday)
-            let two = new Date(result[j].birthday)
-            if(one < two){
-                let temporary = result[i];
-                result[i] = result[j];
-                result[j] = temporary;
-            }
-        }
-    }
-    for (let i = 0; i < result.length; i++) {
-        console.log(result[i]);
-    }
+    const result1 = employees.filter(person => {
+    if (person.department == "DB" && person.salary > 27000)
+    return true
+})
+
+const res =  result1.sort(function(a, b){
+    let dateA = new Date(a.birthday)
+    let dateB = new Date(b.birthday)
+        return dateA-dateB
+})
+
+    return res
 }
-function1(employees);
 
- function exFunction(employees, employeee){
-    for (let i = 0; i < employeee.length; i++) {
-        for (let j = 0; j < employeee.length; j++) {
-            if(JSON.stringify(employeee[i]) == JSON.stringify(employeee[j]) && i != j){
-                    employeee.splice(j, 1);
-            }
-        }
-    }
-    return employeee
- }
 
 // задача 2
 
-function function2(employees)
-{
-    const resultName = [];
+function function2(employees) {
 
-    const result = [];
-    for(let i = 0; i < employees.length; i++)
-    {
-        if(employees[i].gender == "female")
-        {
-            resultName.push(employees[i])
-        }
-    }
-    resultName.sort(function(a,b)
-    {
-        if ( a.name < b.name ) return -1;
-        if ( a.name < b.name ) return 1;
 
+const resultName = employees.filter(resultName => {
+    if (resultName.gender == "female")
+    return true
     })
-    for(let i = 0; i < resultName.length - 1; i++)
-    {
-        if(resultName[i].name != resultName[i + 1].name)
-        {
-            result.push(resultName[i])
-        }
 
-    }
-    if(result[result.length - 1 ] != resultName[resultName.length - 1])
-    {
-        result.push(resultName[resultName.length - 1])
-    }
-    return result;
-}
-
+    const result = resultName.sort(function(a, b){
+        let nameA = a.name.toLowerCase()
+        let nameB = b.name.toLowerCase()
+        if (nameA < nameB)
+            return -1
+        if (nameA > nameB)
+            return 1
+        return 0
+})
+   return result
+   }
 
 console.log(function1(employees));
 console.log(function2(employees));
+
+
+
+
 
 
 
