@@ -1,24 +1,25 @@
-var colours = ['red', 'blue', 'green', 'aqua', 'black'];
-var colorIndex = 0;
 var counter = 0;
-
-function changeColor() {
-  document.querySelector('.box').style.background = colours[colorIndex];
-  changeIndex();
-}
-
-document.querySelector('.button').addEventListener('click', changeColor);
-
-document.querySelector('.hoverable-block').addEventListener('mouseenter', changeColor);
-document.querySelector('.hoverable-block').addEventListener('mouseleave', changeColor);
-
-document.querySelector('.hoverable-block2').addEventListener('mouseover', changeColor);
-document.querySelector('.hoverable-block2').addEventListener('mouseout', changeColor);
-
-document.body.addEventListener('click', updateCounter);
-
+/*var counterr = -1;*/
 
 function updateCounter() {
   document.querySelector('.body-counter').innerText = counter;
   counter++;
 }
+
+function downCounter() {
+    document.querySelector('.body-counter').innerText = counter;
+    if (counter > 0)
+{
+    counter--;
+}
+else
+{
+    brake
+};
+
+}
+
+document.querySelector('.btn_js').addEventListener('click', updateCounter);
+document.querySelector('.btnn_js').addEventListener('click', downCounter);
+
+
