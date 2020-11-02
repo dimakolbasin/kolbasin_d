@@ -52,8 +52,19 @@ body {
     border-bottom: 1px solid #B6C1C2;
 }
 
+/*.btn_nav {
+    display: inline-block;
+}*/
+
+.nav-header {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
 .icon {
     padding-left: 30px;
+
 }
 
 ::-webkit-input-placeholder {
@@ -201,10 +212,18 @@ body {
     text-transform: uppercase;
 }
 
-.staff__text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #6c7279;
+.btn {
+    background-color: #BCD5DA;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.img_btn {
+    padding: 0;
 }
 
 /*footer*/
