@@ -31,7 +31,7 @@
                     <a class="icon" href="#"><img src="img/icon/mail.png" width="32" height="32" alt="mail"></a>
                     </div>
 
-                    <div class="btn_nav">
+                    <div class="btn_nav btnjs">
                     <a class="icon" href="#"><img src="img/icon/basket.png" width="32" height="32" alt="basket"></a>
                     </div>
                     <div class="body-counter">
@@ -101,19 +101,18 @@
                 <h4 class="staff__title">iphone xr 512gb</h4>
                 <h3 class="sale">1300$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button onclick="ix1();" class="btn btn_js" data-id="IPHONE XR 512GB"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 512GB"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
-
 
             <div class="staff__item">
                 <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
                 <h4 class="staff__title">iphone xr 256gb</h4>
                 <h3 class="sale">1100$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button onclick="ix2();" class="btn btn_js" data-id="IPHONE XR 256GB"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 256GB"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
 
@@ -122,8 +121,8 @@
                 <h4 class="staff__title">iphone xr 128gb</h4>
                 <h3 class="sale">900$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button onclick="ix3();" class="btn btn_js" data-id="IPHONE XR 128GB"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 128GB"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
 
@@ -132,8 +131,8 @@
                 <h4 class="staff__title">iphone xr 64gb</h4>
                 <h3 class="sale">799$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button onclick="ix4();" class="btn btn_js" data-id="IPHONE XR 64GB"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 64GB"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
 
@@ -142,8 +141,8 @@
                 <h4 class="staff__title">iphone xr 64gb dual sim</h4>
                 <h3 class="sale">1000$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button  onclick="ix5();"class="btn btn_js" data-id="IPHONE XR 64GB DUAL SIM"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 64GB DUAL SIM"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
 
@@ -152,8 +151,8 @@
                 <h4 class="staff__title">iphone xr 128gb dual sim</h4>
                 <h3 class="sale">1300$</h3>
                 <div class="trash_icon">
-                    <button class="btn btn_js"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
-                    <button class="btn btnn_js"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
+                    <button onclick="ix6();" class="btn btn_js" data-id="IPHONE XR 128GB DUAL SIM"><img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt=""></button>
+                    <button class="btn btnn_js" data-id="IPHONE XR 64GB DUAL SIM"><img class="img_btn" width="50%" src="img/icon/bascket2.png" alt=""></button>
                 </div>
             </div>
                 </div>
@@ -177,6 +176,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal_title">
+            <h4>Корзина</h4>
+        </div>
+        <div class="modal_container">
+            <div id="out">
+
+            </div>
+        </div>
+        <div class="modal_btn">
+            <button class="btn_buy">купить сейчас</button>
+            <button class="btn_drop">очистить корзину</button>
+        </div>
+    </div>
+
+    <div class="modal_bg"></div>
+
 <script type="text/javascript" src="javascript/script.js"></script>
 </body>
 </html>
