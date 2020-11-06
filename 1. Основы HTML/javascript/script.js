@@ -1,33 +1,17 @@
 /*count*/
 
-var counter = 1;
-
+var counter = 0;
 
 function updateCounter() {
-  document.querySelector('.body-counter').innerText = counter;
-  if (counter == 0)
-{
     counter++;
-}
-else
-{
-    counter++;
-};
-
+    document.querySelector('.body-counter').innerText = counter;
 }
 
 function downCounter() {
-    document.querySelector('.body-counter').innerText = counter;
-
-    if (counter > 0)
-{
+    if (counter > 0){
     counter--;
 }
-else
-{
-
-};
-
+document.querySelector('.body-counter').innerText = counter;
 }
 
 let elements = document.querySelectorAll('.btn_js')
@@ -41,6 +25,7 @@ let elem = document.querySelectorAll('.btnn_js')
   }
 
 
+
 /*модальное окно*/
 
 let modal = document.querySelector('.modal');
@@ -52,13 +37,13 @@ modalBtn.addEventListener('click', function(){
     /*modalBg.classList.add('show');*/
 });
 
-document.addEventListener('click', function(e){
+/*document.addEventListener('click', function(e){
     let click = e.target.classList.value;
     if (click === 'modal_bg show') {
         modal.classList.remove('show');
         modalBg.classList.remove('show');
     }
-})
+})*/
 
 function closeCarts () {
     modal.classList.remove('show');
@@ -83,7 +68,7 @@ cart.forEach( (carts) => {
 
 
 
-function ix1 (item){
+function addToCarts (item){
     let newElem = document.createElement("li");
     newElem.append(item);
     document.getElementById('out').appendChild(newElem);

@@ -1,8 +1,7 @@
 body {
-    height: 1000px;
     max-width: 100%;
     margin: 0;
-    font-family: 'Prompt', 'Roboto' sans-serif;
+    font-family: 'Prompt', 'Roboto', sans-serif;
     color: black;
     background: linear-gradient(#A9CFD2, #D8F0F5) no-repeat;
 }
@@ -23,9 +22,6 @@ body {
     margin: 0 auto;
     position:relative;
 }
-
-
-
 
 /*header
 =========================*/
@@ -58,8 +54,8 @@ body {
 
 .nav-header {
     display: flex;
-flex-direction: row;
-justify-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .icon {
@@ -84,7 +80,7 @@ justify-content: center;
 /*nav
 =========================*/
 
-.navi {
+.navigation {
     max-width: 100%;
     width: 1200px;
     margin: 0 auto;
@@ -92,14 +88,12 @@ justify-content: center;
 }
 
 
-
-
 #nav{
     font-family: 'prompt', sans-serif;
 
 }
 
-#nav li{
+.nav-ul li{
     float:left; /* все ссылки идут слева на право */
     position: relative;
     list-style:none; /* убираем точки */
@@ -111,7 +105,7 @@ justify-content: center;
 
 }
 
-#nav a{
+.nav-ul a{
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 6px;
@@ -127,35 +121,32 @@ justify-content: center;
 
 }
 
-#active a, #nav li:hover > a{
+#active a, .nav-ul li:hover > a{
     background:#89a0a5;
 
 
 
 }
 
-#nav ul {
+.nav-ul ul {
     visibility:hidden; /* скрываем выпадающее меню */
     padding:0;
     position:absolute;
-
-
-
 }
 
-#nav li:hover > ul{
+.nav-ul li:hover > ul{
     visibility:visible; /* показываем выпадающее меню при наведении */
     position: absolute;
 
 
 }
 
-#nav ul a{
+.nav-ul ul a{
     padding:7px; /* делаем отступы выпадающего меню меньше от основного */
 
 }
 
-#nav ul li:hover{
+.nav-ul ul li:hover{
     background:#89a0a5;
 
 }
@@ -164,13 +155,22 @@ justify-content: center;
 /*main
 =========================*/
 
+.container-staff {
+    max-width: 100%;
+    width: 1120px;
+    margin: 0 auto;
+    position:relative;
+    display: flex;
+}
+
 .main_img {
     margin: 93px 0 0 4px;
 
-
 }
 
-
+.img_btn {
+    width: 50%;
+}
 
 
 .staff {
@@ -234,7 +234,7 @@ justify-content: center;
 }
 
 .call {
-    font-family: 'prompt' sans-serif;
+    font-family: 'prompt', sans-serif;
     color: #96B5BB;
     letter-spacing: 6px;
 }
