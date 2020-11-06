@@ -14,12 +14,12 @@ function downCounter() {
 document.querySelector('.body-counter').innerText = counter;
 }
 
-let elements = document.querySelectorAll('.btn_js')
+let elements = document.querySelectorAll('.btn-plus')
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener('click', updateCounter);
   }
 
-let elem = document.querySelectorAll('.btnn_js')
+let elem = document.querySelectorAll('.btn-minus')
     for (let i = 0; i < elements.length; i++) {
         elem[i].addEventListener('click', downCounter);
   }
@@ -71,7 +71,7 @@ cart.forEach( (carts) => {
 function addToCarts (item){
     let newElem = document.createElement("li");
     newElem.append(item);
-    document.getElementById('out').appendChild(newElem);
+    document.getElementById('modalId').appendChild(newElem);
 };
 
 

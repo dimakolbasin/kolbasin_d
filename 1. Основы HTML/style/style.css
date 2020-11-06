@@ -228,7 +228,7 @@ body {
 
 /*footer*/
 
-.foot_inner {
+.foot-inner {
     margin-top: 100px;
     border-top: 1px solid #B6C1C2;
 }
@@ -239,7 +239,7 @@ body {
     letter-spacing: 6px;
 }
 
-.aa {
+.social {
     margin-right: 32px;
 }
 
@@ -263,12 +263,12 @@ body {
 
 
 
-.modal_title {
+.modal-title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.modal_bg {
+/*.modal-bg {
     visibility: hidden;
     opacity: 0;
     width: 100%;
@@ -277,7 +277,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0,0,0, 0);
-}
+}*/
 
 /*.modal_bg.show {
     visibility: visible;
