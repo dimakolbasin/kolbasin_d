@@ -159,9 +159,16 @@ body {
     max-width: 100%;
     width: 1120px;
     margin: 0 auto;
-    position:relative;
+    position: relative;
     display: flex;
 }
+
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .main_img {
     margin: 93px 0 0 4px;
@@ -178,8 +185,6 @@ body {
     flex-wrap: wrap;
     margin: 95px 0;
     position:absolute;
-    top:-633px;
-    right:0px;
     width:850px;
 
 }
@@ -246,6 +251,7 @@ body {
 /*modal*/
 
 .modal {
+    height: 400px;
     justify-content: center;
     align-items: center;
     visibility: hidden;
@@ -253,12 +259,22 @@ body {
     background-color: #ffffff;
     color: #242424;
     padding: 2rem;
-    transform: (-50%, -50%);
     transition: opacity 0.25s;
-    position: fixed;
-    top: 40%;
-    left: 35%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+.bascket-name {
+
+    margin: 0;
+}
+
+.modal_btn {
+    position:absolute;
+    bottom:0;
 }
 
 
@@ -285,7 +301,9 @@ body {
     transition:  opacity 0.25s;
 }*/
 
+
 .modal.show {
+    overflow-y: scroll;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.25s;
@@ -293,7 +311,6 @@ body {
     align-items: center;
     margin-top: 5px;
 }
-
 
 
 
