@@ -251,19 +251,21 @@ body {
 /*modal*/
 
 .modal {
+    width: 450px;
     height: 400px;
     justify-content: center;
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    background-color: #ffffff;
+    background-color: #C1DEE4;
     color: #242424;
     padding: 2rem;
     transition: opacity 0.25s;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 
 }
 
@@ -272,9 +274,24 @@ body {
     margin: 0;
 }
 
-.modal_btn {
-    position:absolute;
-    bottom:0;
+.list {
+    overflow-y: auto;
+    height: 250px;
+}
+
+.btn-buy,
+.btn-drop,
+.close-cart {
+    background-color: #a1c6ce;
+    border-radius: 5px;
+
+}
+
+.btn-buy:hover,
+.btn-drop:hover,
+.close-cart:hover {
+    background-color: #839ea3;
+    cursor: pointer;
 }
 
 
@@ -303,7 +320,6 @@ body {
 
 
 .modal.show {
-    overflow-y: scroll;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.25s;
