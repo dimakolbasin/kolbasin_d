@@ -184,7 +184,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 95px 0;
-    position:absolute;
     width:850px;
 
 }

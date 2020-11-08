@@ -74,6 +74,13 @@ function addToCarts (item){
     document.getElementById('modalId').appendChild(newElem);
 };
 
+/*remove buscket*/
+
+function removeToCarts () {
+    document.getElementById('modalId').innerText = "";
+    counter = 0
+    document.querySelector('.body-counter').innerText = "";
+}
 
 
 
