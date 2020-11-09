@@ -29,12 +29,18 @@ let elem = document.querySelectorAll('.btn-minus')
 /*модальное окно*/
 
 let modal = document.querySelector('.modal');
-let modalBtn = document.querySelector('.btnjs');
+let modalBtn = document.querySelector('.open-cart');
 let closeCart = document.querySelector('.close-cart');
 
+
+
 modalBtn.addEventListener('click', function(){
+    setTimeout(function() {
     modal.classList.add('show');
+    let windows8 = document.querySelector('.windows8');
+    windows8.classList.remove('show');
     /*modalBg.classList.add('show');*/
+    }, 3000);
 });
 
 /*document.addEventListener('click', function(e){
@@ -82,6 +88,13 @@ function removeToCarts () {
     document.querySelector('.body-counter').innerText = "";
 }
 
+
+/*preloader*/
+
+function preloader () {
+      let windows8 = document.querySelector('.windows8');
+      windows8.classList.add('show');
+}
 
 
 
