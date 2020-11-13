@@ -37,8 +37,8 @@ let closeCart = document.querySelector('.close-cart');
 modalBtn.addEventListener('click', function(){
     setTimeout(function() {
     modal.classList.add('show');
-    let windows8 = document.querySelector('.windows8');
-    windows8.classList.remove('show');
+    let loader = document.querySelector('.loader');
+    loader.classList.remove('show');
     /*modalBg.classList.add('show');*/
     }, 2000);
 });
@@ -92,8 +92,8 @@ function removeToCarts () {
 /*preloader*/
 
 function preloader () {
-      let windows8 = document.querySelector('.windows8');
-      windows8.classList.add('show');
+      let loader = document.querySelector('.loader');
+      loader.classList.add('show');
 }
 
 /*modal iphone*/

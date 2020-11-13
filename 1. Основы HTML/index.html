@@ -21,16 +21,16 @@
         <div class="container">
             <div class="header_inner">
                 <div class="logo">
-                <p style="color:#768D8C">Techno</p><p style="color:white">point</p>
+                <span><span class="logo-grey">Techno</span><span class="logo-white">Point</span></span>
                 </div>
                 <div class="nav-header">
                     <div class="btn_nav">
                     <input type="search" placeholder="search" class="search">
                     </div>
-                    <div class="btn_nav">
+                    <div class="btn_nav btn_hide">
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/like.png" alt="like"></a>
                     </div>
-                    <div class="btn_nav">
+                    <div class="btn_nav btn_hide">
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/mail.png" alt="mail"></a>
                     </div>
 
@@ -40,7 +40,7 @@
                     <div class="body-counter">
 
                     </div>
-                    <div class="btn_nav">
+                    <div class="btn_nav btn_hide">
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/logout.png" alt="logout"></a>
                     </div>
 
@@ -54,23 +54,51 @@
     <!--nav-->
     <nav class="navigation">
         <ul class="nav-ul">
-        <li class="list-nav">
-            <a class="list-a" href="#">Каталог</a>
+        <li>
+            <a href="#">Каталог</a>
+            <ul>
+                <li><a href="#">apple</a></li>
+                <li><a href="#">samsung</a></li>
+                <li><a href="#">moto</a></li>
+                <li><a href="#">fly</a></li>
+                <li><a href="#">sony</a></li>
+                <li><a href="#">xiaomi</a></li>
+                <li><a href="#">honor</a></li>
+                <li><a href="#">lenovo</a></li>
+                <li><a href="#">meizu</a></li>
+                <li><a href="#">micro</a></li>
+                <li><a href="#">lg</a></li>
+                <li><a href="#">high</a></li>
+                <li><a href="#">xgody</a></li>
+            </ul>
         </li>
-        <li class="list-nav">
-            <a class="list-a" href="#">доставка</a>
+        <li>
+        <a href="#">главная</a>
+            <ul>
+
+            </ul>
         </li>
-        <li class="list-nav">
-            <a class="list-a" href="#">о нас</a>
+        <li>
+        <a href="#">доставка</a>
+            <ul>
+
+            </ul>
+        </li>
+        <li>
+        <a href="#">о нас</a>
+            <ul>
+
+            </ul>
         </li>
         </ul>
     </nav>
     <!--main-->
     <main>
         <div class="container container-main">
-            <!--<div class="main_img">
+                <div class="container-box">
+            <div class="main_img">
                 <a href="#"><img  src="img/333.png" alt="sss"></a>
-            </div>-->
+            </div>
 
                 <div class="container-staff">
                 <div class="staff">
@@ -100,6 +128,7 @@
                     <button class="btn btn-minus" data-id="IPHONE XR 256GB">
                     <img class="img_btn" width="50%" src="img/icon/bascket2.png" alt="">
                     </button>
+
                 </div>
             </div>
 
@@ -159,6 +188,7 @@
             </div>
                 </div>
                 </div>
+                </div>
         </div>
     </main>
 
@@ -202,7 +232,7 @@
 
     <!--preloader-->
 
-<div class="windows8">
+<div class="loader">
     <div class="wBall" id="wBall_1">
         <div class="wInnerBall"></div>
     </div>
@@ -223,10 +253,10 @@
 <!--modal iphone -->
 
 <div class="modal-iphone">
-    <div class="item-text"><a class="text-item" href="#">главная</a></div>
-    <div class="item-text"><a class="text-item" href="#">доставка</a></div>
-    <div class="item-text"><a class="text-item" href="#">о компании</a></div>
-    <div onclick="closeModalIphone()" class="item-text"><a class="text-item" href="#">выйти</a></div>
+    <div class="item-text"><a class="text-item" href="#">избранное</a></div>
+    <div class="item-text"><a class="text-item" href="#">почта</a></div>
+    <div class="item-text"><a class="text-item" href="#">покинуть аккаунт</a></div>
+    <div onclick="closeModalIphone()" class="item-text"><a class="text-item" href="#">закрыть меню</a></div>
 </div>
 
 <script type="text/javascript" src="javascript/script.js"></script>
