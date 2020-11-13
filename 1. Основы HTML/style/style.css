@@ -740,6 +740,12 @@ body {
     display: none;
 }
 
+    .modal-iphone {
+    width: 400px;
+    height:700px;
+    margin:0;
+    top: -2500px;
+}
     }
 
 
