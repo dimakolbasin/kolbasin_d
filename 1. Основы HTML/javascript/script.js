@@ -1,4 +1,4 @@
-/*count*/
+/*counter*/
 
 var counter = 0;
 
@@ -40,7 +40,7 @@ modalBtn.addEventListener('click', function(){
     let windows8 = document.querySelector('.windows8');
     windows8.classList.remove('show');
     /*modalBg.classList.add('show');*/
-    }, 3000);
+    }, 2000);
 });
 
 /*document.addEventListener('click', function(e){
@@ -96,8 +96,16 @@ function preloader () {
       windows8.classList.add('show');
 }
 
+/*modal iphone*/
 
+function modalIphone() {
+    let modalIph = document.querySelector('.modal-iphone');
+    modalIph.classList.add('show');
+}
 
-
+function closeModalIphone () {
+    let modalIphCls = document.querySelector('.modal-iphone');
+    modalIphCls.classList.remove('show');
+}
 
 
