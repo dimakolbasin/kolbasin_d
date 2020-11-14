@@ -101,14 +101,14 @@ function preloader () {
 
 /*modal iphone*/
 
-function modalIphone() {
-    let modalIph = document.querySelector('.modal-iphone');
-    modalIph.classList.add('show');
+function modalPhone() {
+    let modalPh = document.querySelector('.modal-phone');
+    modalPh.classList.add('show');
 }
 
-function closeModalIphone () {
-    let modalIphCls = document.querySelector('.modal-iphone');
-    modalIphCls.classList.remove('show');
+function closeModalPhone () {
+    let modalPhCls = document.querySelector('.modal-phone');
+    modalPhCls.classList.remove('show');
 }
 
 

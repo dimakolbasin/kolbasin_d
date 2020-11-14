@@ -393,16 +393,29 @@ body {
 /*preloader===================
 =============================*/
 
+.loader-container {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f0f8ffb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loader.show {
     visibility: visible;
 }
 
 .loader {
-    position: relative;
+    /*position: relative;*/
     width: 180px;
     height: 180px;
     margin: auto;
-    top: -850px;
+    /*top: -850px;*/
     visibility: hidden;
 }
 
@@ -501,20 +514,35 @@ body {
     }
 }
 
-.modal-iphone {
+/*modal phone*/
+
+.modal-phone-container {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f0f8ffb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-phone {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #C1DEE4;
-    position: relative;
+    /*position: relative;*/
     width: 375px;
     height: 669px;
-    margin: 0;
-    top: -2498px;
+    margin: auto;
+    /*top: -2498px;*/
     visibility: hidden;
 }
 
-.modal-iphone.show {
+.modal-phone.show {
     visibility: visible;
 }
 
@@ -680,7 +708,7 @@ body {
 ==========================*/
 
 @media (max-width: 768px) {
-    .modal-iphone {
+    .modal-phone {
         width: 768px;
         height: 1024px;
         margin: 0;
@@ -791,7 +819,7 @@ body {
 ==========================*/
 
 @media (max-width: 736px) {
-    .modal-iphone {
+    .modal-phone {
         width: 736px;
         height: 1024px;
         margin: 0;
@@ -1016,11 +1044,10 @@ body {
         display: none;
     }
 
-    .modal-iphone {
+    .modal-phone {
         width: 400px;
-        height: 700px;
+        height: 600px;
         margin: 0;
-        top: -2500px;
-        right: 30px;
+
     }
 }
