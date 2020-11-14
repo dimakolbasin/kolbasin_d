@@ -29,6 +29,7 @@ let elem = document.querySelectorAll('.btn-minus')
 /*модальное окно*/
 
 let modal = document.querySelector('.modal');
+let modalContainer = document.querySelector('.modal_container')
 let modalBtn = document.querySelector('.open-cart');
 let closeCart = document.querySelector('.close-cart');
 
@@ -37,6 +38,7 @@ let closeCart = document.querySelector('.close-cart');
 modalBtn.addEventListener('click', function(){
     setTimeout(function() {
     modal.classList.add('show');
+    modalContainer.classList.add('show');
     let loader = document.querySelector('.loader');
     loader.classList.remove('show');
     /*modalBg.classList.add('show');*/
@@ -53,6 +55,7 @@ modalBtn.addEventListener('click', function(){
 
 function closeCarts () {
     modal.classList.remove('show');
+    modalContainer.classList.remove('show');
 }
 
 /*busket add*/
