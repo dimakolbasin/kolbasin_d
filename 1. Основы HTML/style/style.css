@@ -108,6 +108,7 @@ body {
     margin: auto;
     display: flex;
     margin-top: 20px;
+    padding-right: 50px;
 }
 
 .nav-ul {
