@@ -105,8 +105,9 @@ body {
 .navigation {
     max-width: 100%;
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
+    margin-top: 20px;
 }
 
 .nav-ul {
@@ -114,12 +115,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
 }
 
 
 .nav-ul li {
-
     /*float: left;*/
     /* все ссылки идут слева на право */
     /*position: relative;*/
@@ -205,12 +205,13 @@ body {
 }*/
 
 .container-box {
+    margin-top: 20px;
     display: flex;
 }
 
 .main_img {
     flex: 0 1 20%;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 48px;
 }
 
@@ -277,7 +278,7 @@ body {
 /*footer*/
 
 .foot-inner {
-    margin-top: 100px;
+    margin-top: 60px;
     border-top: 1px solid #B6C1C2;
 }
 
@@ -536,8 +537,8 @@ body {
     align-items: center;
     background-color: #C1DEE4;
     /*position: relative;*/
-    width: 375px;
-    height: 669px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     /*top: -2498px;*/
     visibility: hidden;
@@ -570,6 +571,9 @@ body {
 }
 
 /*media queries*/
+
+/*media 1024px============
+===========================*/
 
 @media (max-width: 1024px) {
     .nav-ul li {
@@ -733,7 +737,7 @@ body {
 
 
     .nav-ul li {
-        width: 170px;
+        width: 190px;
         margin-right: 5px;
         z-index: 0;
 
@@ -848,7 +852,7 @@ body {
 
 
     .nav-ul li {
-        width: 170px;
+        width: 130px;
         margin-right: 5px;
         z-index: 0;
 
@@ -928,6 +932,32 @@ body {
         display: none;
     }
 }
+
+/*medai 530px=================
+=============================*/
+
+@media (max-width: 530px) {
+        .nav-ul li {
+        width: 120px;
+        margin-right: 1px;
+        z-index: 0;
+
+    }
+
+    .nav-ul {
+    flex-wrap: nowrap;
+}
+
+    .nav-ul a {
+        font-weight: 100;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 1px;
+
+
+    }
+}
+
 
 /*medai 450px=================
 =============================*/
