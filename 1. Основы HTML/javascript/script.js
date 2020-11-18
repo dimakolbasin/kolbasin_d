@@ -60,7 +60,7 @@ function closeCarts () {
 
 /*busket add*/
 
-
+let map = new Map()
 
 const catalog =[
     {name:'IPHONE XR 512GB', price:0, num:0},
@@ -71,40 +71,27 @@ const catalog =[
     {name:'IPHONE XR 128GB DUAL SIM', price:0, num:0}
 ];
 
+function addToCart(article, priceCart) {
+    map.set(article, catalog[article]);
 
+    catalog[article]['price']+=(priceCart);
+    catalog[article]['num']++;
 
-function addToCart (name, priceCart) {
-    const person = catalog.map(catalog => {
-        return catalog
-    })
-    person[name]['price']+=(priceCart);
-    person[name]['num']++;
+    document.querySelector('.body-counter').innerText = ((catalog[0]['num'])+(catalog[1]['num'])+(catalog[2]['num'])+(catalog[3]['num'])+(catalog[4]['num'])+(catalog[5]['num']));
 
-    document.querySelector('.body-counter').innerText = ((person[0]['num'])+(person[1]['num'])+(person[2]['num'])+(person[3]['num'])+(person[4]['num'])+(person[5]['num']));
-
-
-    console.log(person);
+    console.log(map);
 
 }
 
 
-
-
-
-/*function addToCarts (item, price){
-    let newElem = document.createElement("div");
-    newElem.append(item);
-    newElem.append(price);
-    document.getElementById('modalId').appendChild(newElem);
-};*/
 
 /*remove buscket*/
 
-function removeToCarts () {
+/*function removeToCarts () {
     document.getElementById('modalId').innerText = "";
     counter = 0
     document.querySelector('.body-counter').innerText = "";
-}
+}*/
 
 
 /*preloader*/

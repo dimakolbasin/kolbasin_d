@@ -34,7 +34,7 @@
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/mail.png" alt="mail"></a>
                     </div>
 
-                    <div class="btn_nav open-cart" onclick="preloader()">
+                    <div class="btn_nav open-cart" onclick="preloader(), renderCart()">
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/basket.png" alt="basket"></a>
                     </div>
                     <div class="body-counter">
@@ -108,7 +108,7 @@
                 <h4 class="staff__title">iphone xr 512gb</h4>
                 <h3 class="sale">1300$</h3>
                 <div class="trash_icon">
-                    <button onclick="addToCart([0], 1300)" class="btn btn-plus" data-id="IPHONE XR 512GB">
+                    <button onclick="addToCart(0, 1300)" class="btn btn-plus" data-id="IPHONE XR 512GB">
                     <img class="img_btn" width="50%" margin ='0' src="img/icon/bascket1.png" alt="">
                     </button>
                     <button onclick="downCounter()" class="btn btn-minus" data-id="IPHONE XR 512GB">
@@ -122,7 +122,7 @@
                 <h4 class="staff__title">iphone xr 256gb</h4>
                 <h3 class="sale">1100$</h3>
                 <div class="trash_icon">
-                    <button onclick="addToCart([1], 1100)" class="btn btn-plus" data-id="IPHONE XR 256GB">
+                    <button onclick="addToCart(1, 1100)" class="btn btn-plus" data-id="IPHONE XR 256GB">
                     <img class="img_btn" src="img/icon/bascket1.png" alt="">
                     </button>
                     <button class="btn btn-minus" data-id="IPHONE XR 256GB">
@@ -137,7 +137,7 @@
                 <h4 class="staff__title">iphone xr 128gb</h4>
                 <h3 class="sale">900$</h3>
                 <div class="trash_icon">
-                    <button onclick="addToCart([2], 900)" class="btn btn-plus" data-id="IPHONE XR 128GB">
+                    <button onclick="addToCart(2, 900)" class="btn btn-plus" data-id="IPHONE XR 128GB">
                     <img class="img_btn" src="img/icon/bascket1.png" alt="">
                     </button>
                     <button class="btn btn-minus" data-id="IPHONE XR 128GB">
@@ -151,7 +151,7 @@
                 <h4 class="staff__title">iphone xr 64gb</h4>
                 <h3 class="sale">799$</h3>
                 <div class="trash_icon">
-                    <button onclick="addToCart([3], 799)" class="btn btn-plus" data-id="IPHONE XR 64GB">
+                    <button onclick="addToCart(3, 799)" class="btn btn-plus" data-id="IPHONE XR 64GB">
                     <img class="img_btn" src="img/icon/bascket1.png" alt="">
                     </button>
                     <button class="btn btn-minus" data-id="IPHONE XR 64GB">
@@ -165,7 +165,7 @@
                 <h4 class="staff__title">iphone xr 64gb dual sim</h4>
                 <h3 class="sale">1000$</h3>
                 <div class="trash_icon">
-                    <button  onclick="addToCart([4], 1000)" class="btn btn-plus" data-id="IPHONE XR 64GB DUAL SIM">
+                    <button  onclick="addToCart(4, 1000)" class="btn btn-plus" data-id="IPHONE XR 64GB DUAL SIM">
                     <img class="img_btn" src="img/icon/bascket1.png" alt="">
                     </button>
                     <button class="btn btn-minus" data-id="IPHONE XR 64GB DUAL SIM">
@@ -179,7 +179,7 @@
                 <h4 class="staff__title">iphone xr 128gb dual sim</h4>
                 <h3 class="sale">1300$</h3>
                 <div class="trash_icon">
-                    <button onclick="addToCart([5], 1300)" class="btn btn-plus" data-id="IPHONE XR 128GB DUAL SIM">
+                    <button onclick="addToCart(5, 1300)" class="btn btn-plus" data-id="IPHONE XR 128GB DUAL SIM">
                     <img class="img_btn" src="img/icon/bascket1.png" alt="">
                     </button>
                     <button class="btn btn-minus" data-id="IPHONE XR 64GB DUAL SIM"><img class="img_btn" src="img/icon/bascket2.png" alt="">
@@ -228,13 +228,13 @@
         </li>
         <li>
            <span>количество</span>
-            <div class="listy">
+            <div class="listy" id="modalId1">
 
             </div>
         </li>
         <li>
            <span>цена</span>
-            <div class="listy">
+            <div class="listy" id="modalId2">
 
             </div>
         </li>
