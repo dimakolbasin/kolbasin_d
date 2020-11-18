@@ -1,6 +1,6 @@
 /*counter*/
 
-var counter = 0;
+/*var counter = 0;
 
 function updateCounter() {
     counter++;
@@ -22,7 +22,7 @@ let elements = document.querySelectorAll('.btn-plus')
 let elem = document.querySelectorAll('.btn-minus')
     for (let i = 0; i < elements.length; i++) {
         elem[i].addEventListener('click', downCounter);
-  }
+  }*/
 
 
 
@@ -61,27 +61,42 @@ function closeCarts () {
 /*busket add*/
 
 
-/*
-let cart = [
-    {'name':'IPHONE XR 512GB','price':1300},
-    {'name':'IPHONE XR 256GB','price':1100},
-    {'name':'IPHONE XR 128GB','price':900},
-    {'name':'IPHONE XR 64GB','price':799},
-    {'name':'IPHONE XR 64GB DUAL SIM','price':1000},
-    {'name':'IPHONE XR 128GB DUAL SIM','price':1300}];
 
-cart.forEach( (carts) => {
-    console.log(carts)
-});
-*/
+const catalog =[
+    {name:'IPHONE XR 512GB', price:0, num:0},
+    {name:'IPHONE XR 256GB', price:0, num:0},
+    {name:'IPHONE XR 128GB', price:0, num:0},
+    {name:'IPHONE XR 64GB', price:0, num:0},
+    {name:'IPHONE XR 64GB DUAL SIM', price:0, num:0},
+    {name:'IPHONE XR 128GB DUAL SIM', price:0, num:0}
+];
 
 
 
-function addToCarts (item){
-    let newElem = document.createElement("li");
+function addToCart (name, priceCart) {
+    const person = catalog.map(catalog => {
+        return catalog
+    })
+    person[name]['price']+=(priceCart);
+    person[name]['num']++;
+
+    document.querySelector('.body-counter').innerText = ((person[0]['num'])+(person[1]['num'])+(person[2]['num'])+(person[3]['num'])+(person[4]['num'])+(person[5]['num']));
+
+
+    console.log(person);
+
+}
+
+
+
+
+
+/*function addToCarts (item, price){
+    let newElem = document.createElement("div");
     newElem.append(item);
+    newElem.append(price);
     document.getElementById('modalId').appendChild(newElem);
-};
+};*/
 
 /*remove buscket*/
 
@@ -99,7 +114,7 @@ function preloader () {
       loader.classList.add('show');
 }
 
-/*modal iphone*/
+/*modal phone*/
 
 function modalPhone() {
     let modalPh = document.querySelector('.modal-phone');

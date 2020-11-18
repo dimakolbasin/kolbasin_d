@@ -32,7 +32,10 @@ body {
 /*header
 =========================*/
 
-.header {}
+.header {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .logo-grey {
     color: #768D8C;
@@ -295,6 +298,26 @@ body {
 
 /*modal*/
 
+.list-container {
+    display: flex;
+}
+
+.list-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    list-style: none;
+    list-style-type: none;
+
+}
+
+.list-ul li span {
+    margin-top: -20px;
+
+}
+
 .modal_container {
     visibility: hidden;
     position: fixed;
@@ -317,7 +340,7 @@ body {
     margin: auto;
     /*top: 0px*/;
     visibility: hidden;
-    width: 450px;
+    width: 600px;
     height: 400px;
     justify-content: center;
     align-items: center;
@@ -344,9 +367,9 @@ body {
     margin: 0;
 }
 
-.list {
+.listy {
     overflow-y: auto;
-    height: 250px;
+    height: 220px;
 }
 
 .btn-buy,
@@ -548,6 +571,8 @@ body {
 .modal-phone.show {
     visibility: visible;
 }
+
+
 
 .item-text {
     margin-top: 30px;
@@ -965,6 +990,11 @@ body {
 
 
 @media (max-width: 450px) {
+
+    .header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
     body {
         overflow-x: hidden;
