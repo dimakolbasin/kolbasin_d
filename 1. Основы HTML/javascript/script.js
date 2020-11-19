@@ -91,6 +91,16 @@ const totalPrice = () => {
     return count
 }
 
+const counterCart = () => {
+    let counter = 0;
+
+    cart.forEach(value => counter += value.count)
+
+    return counter
+}
+
+document.querySelector('.body-counter').innerText = counter;
+
 cart.set('total', totalPrice());
 
 console.log(cart);
