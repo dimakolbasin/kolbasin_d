@@ -60,7 +60,9 @@ function closeCarts () {
 
 /*busket add*/
 
-let map = new Map()
+let count = 0;
+
+const cart = new Map();
 
 const catalog =[
     {name:'IPHONE XR 512GB', price:0, num:0},
@@ -72,16 +74,41 @@ const catalog =[
 ];
 
 function addToCart(article, priceCart) {
-    map.set(article, catalog[article]);
+
+cart.set(article, catalog[article]);
+const getCartCount = () => {
+    let count = 0;
+
+    cart.forEach((value, key) => {
+        count +=(`${article}: ${value.num++}`);
+        (`${article}: ${value.price+=(priceCart)}`)
+    });
+    return count;
+}
+console.log(getCartCount())
+
+    /*map.set(article, catalog[article]);
 
     catalog[article]['price']+=(priceCart);
-    catalog[article]['num']++;
+    catalog[article]['num']++;*/
 
-    document.querySelector('.body-counter').innerText = ((catalog[0]['num'])+(catalog[1]['num'])+(catalog[2]['num'])+(catalog[3]['num'])+(catalog[4]['num'])+(catalog[5]['num']));
+    /*document.querySelector('.body-counter').innerText = ((catalog[0]['num'])+(catalog[1]['num'])+(catalog[2]['num'])+(catalog[3]['num'])+(catalog[4]['num'])+(catalog[5]['num']));*/
 
-    console.log(map);
+    /*const getCartCount = () => {
+
+    map.forEach((value) => {
+        count += value.num;
+    });
+    return count;
+
+}*/
+
+
+
+    /*console.log(map);*/
 
 }
+
 
 
 
