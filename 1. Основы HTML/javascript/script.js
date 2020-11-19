@@ -85,7 +85,7 @@ const getCartCount = () => {
     });
     return count;
 }
-console.log(getCartCount())
+getCartCount()
 
     /*map.set(article, catalog[article]);
 
