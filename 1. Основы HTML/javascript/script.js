@@ -86,6 +86,7 @@ const addToCart = (index, priceItem) => {
  }
 document.querySelector('.body-counter').innerText=(counterCart());
 
+cart.set('total price', totalPrice)
 
 }
 
@@ -93,6 +94,15 @@ const counterCart = () => {
     let counter = 0;
 
     cart.forEach(value => counter += value.count)
+
+    return counter
+
+};
+
+const totalPrice = () => {
+    let counter = 0;
+
+    cart.forEach(value => counter += value.price)
 
     return counter
 
