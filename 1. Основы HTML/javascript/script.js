@@ -63,7 +63,7 @@ function closeCarts () {
 
 const cart = new Map();
 
-const catalog =[
+const getCatalog = () => [
     {name:'IPHONE XR 512GB', price:1300, count:0},
     {name:'IPHONE XR 256GB', price:1100, count:0},
     {name:'IPHONE XR 128GB', price:900, count:0},
@@ -75,8 +75,7 @@ const catalog =[
 /* )*/
 
 const addToCart = (index, priceItem) => {
-    counterCart();
-    let counter = 0;
+    const catalog = getCatalog();
     const product = catalog[index];
     if(!!product) {
     product.count = ++product.count;
@@ -84,11 +83,13 @@ const addToCart = (index, priceItem) => {
     cart.set(index, product);
 
  }
+
 document.querySelector('.body-counter').innerText=(counterCart());
 
-cart.set('total price', totalPrice)
 
 }
+
+
 
 const counterCart = () => {
     let counter = 0;
@@ -99,14 +100,6 @@ const counterCart = () => {
 
 };
 
-const totalPrice = () => {
-    let counter = 0;
-
-    cart.forEach(value => counter += value.price)
-
-    return counter
-
-};
 
 /*
 const renderCart = () => {
