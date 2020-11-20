@@ -79,17 +79,18 @@ const addToCart = (index, priceItem) => {
     const catalog = getCatalog();
     const product = catalog[index];
 
-    if(!!product && cart.has(index) === false) {
-
-        ++product.count;
-        product.price += priceItem;
-        cart.set(index, product);
-
-    } else if(cart.has(index) === true) {
+    if(cart.has(index) === true) {
         let productFromCart = cart.get(index)
         ++productFromCart.count;
         productFromCart.price += priceItem;
         cart.set(index, productFromCart);
+
+
+    } else {
+        ++product.count;
+        product.price += priceItem;
+        cart.set(index, product);
+
 
     /*cart.forEach((value, key) => {
         (`${index}: ${++value.count}`);
@@ -98,7 +99,7 @@ const addToCart = (index, priceItem) => {
 
 
  }
-    console.log(cart);
+
     document.querySelector('.body-counter').innerText=(counterCart());
     totalPriceCart.set('Total Price', totalPrice());
  }
@@ -144,19 +145,19 @@ const renderCart = () => {
 
 /*preloader*/
 
-function preloader () {
+const preloader = () => {
       let loader = document.querySelector('.loader');
       loader.classList.add('show');
 }
 
 /*modal phone*/
 
-function modalPhone() {
+const modalPhone = () => {
     let modalPh = document.querySelector('.modal-phone');
     modalPh.classList.add('show');
 }
 
-function closeModalPhone () {
+const closeModalPhone = () => {
     let modalPhCls = document.querySelector('.modal-phone');
     modalPhCls.classList.remove('show');
 }
