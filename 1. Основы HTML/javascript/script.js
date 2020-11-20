@@ -60,45 +60,58 @@ function closeCarts () {
 
 /*busket add*/
 
-
+const totalPriceCart = new Map();
 const cart = new Map();
 
 const getCatalog = () => [
-    {name:'IPHONE XR 512GB', price:1300, count:0},
-    {name:'IPHONE XR 256GB', price:1100, count:0},
-    {name:'IPHONE XR 128GB', price:900, count:0},
-    {name:'IPHONE XR 64GB', price:799, count:0},
-    {name:'IPHONE XR 64GB DUAL SIM', price:1000, count:0},
-    {name:'IPHONE XR 128GB DUAL SIM', price:1300, count:0}
+    {name:'IPHONE XR 512GB', price:0, count:0},
+    {name:'IPHONE XR 256GB', price:0, count:0},
+    {name:'IPHONE XR 128GB', price:0, count:0},
+    {name:'IPHONE XR 64GB', price:0, count:0},
+    {name:'IPHONE XR 64GB DUAL SIM', price:0, count:0},
+    {name:'IPHONE XR 128GB DUAL SIM', price:0, count:0}
 ];
 
 /* )*/
 
 const addToCart = (index, priceItem) => {
+
     const catalog = getCatalog();
     const product = catalog[index];
-    if(!!product) {
-    product.count = ++product.count;
-    product.price += priceItem;
-    cart.set(index, product);
+
+    if(!!product && cart.has(index) === false) {
+
+        ++product.count;
+        product.price += priceItem;
+        cart.set(index, product);
+
+    } else if(cart.has(index) === true) {
+
+    cart.forEach((value, key) => {
+        (`${index}: ${++value.count}`);
+        (`${index}: ${value.price+=(priceItem)}`);
+    });
+
 
  }
-
-document.querySelector('.body-counter').innerText=(counterCart());
-
-
-}
-
+    document.querySelector('.body-counter').innerText=(counterCart());
+    totalPriceCart.set('Total Price', totalPrice());
+ }
 
 
 const counterCart = () => {
     let counter = 0;
-
-    cart.forEach(value => counter += value.count)
+    cart.forEach(value => counter += value.count);
 
     return counter
+}
 
-};
+const totalPrice = () => {
+    let count = 0;
+    cart.forEach(value => count += value.price)
+    return count
+}
+
 
 
 /*
