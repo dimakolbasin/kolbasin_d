@@ -86,14 +86,19 @@ const addToCart = (index, priceItem) => {
         cart.set(index, product);
 
     } else if(cart.has(index) === true) {
+        let productFromCart = cart.get(index)
+        ++productFromCart.count;
+        productFromCart.price += priceItem;
+        cart.set(index, productFromCart);
 
-    cart.forEach((value, key) => {
+    /*cart.forEach((value, key) => {
         (`${index}: ${++value.count}`);
         (`${index}: ${value.price+=(priceItem)}`);
-    });
+    });*/
 
 
  }
+    console.log(cart);
     document.querySelector('.body-counter').innerText=(counterCart());
     totalPriceCart.set('Total Price', totalPrice());
  }
