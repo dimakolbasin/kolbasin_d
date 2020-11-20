@@ -74,21 +74,19 @@ const catalog =[
 
 /* )*/
 
-const addToCart = (index) => {
+const addToCart = (index, priceItem) => {
+    counterCart();
+    let counter = 0;
     const product = catalog[index];
-    counter = 0
     if(!!product) {
-        product.count = ++product.count;
-        product.price = product.count * product.price;
-        cart.set(index, product)
-    }
+    product.count = ++product.count;
+    product.price += priceItem;
+    cart.set(index, product);
 
-const totalPrice = () => {
-    let count = 0;
+ }
+document.querySelector('.body-counter').innerText=(counterCart());
 
-    cart.forEach(value => count += value.price)
 
-    return count
 }
 
 const counterCart = () => {
@@ -97,20 +95,17 @@ const counterCart = () => {
     cart.forEach(value => counter += value.count)
 
     return counter
+
+};
+
+/*
+const renderCart = () => {
+    let newElem = document.createElement("div");
+    newElem.append(123);
+
+    document.getElementById('modalId').appendChild(newElem);
 }
-
-document.querySelector('.body-counter').innerText = counter;
-
-cart.set('total', totalPrice());
-
-console.log(cart);
-
-}
-
-
-
-
-
+*/
 
 
 
