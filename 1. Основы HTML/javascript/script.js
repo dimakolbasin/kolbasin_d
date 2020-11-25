@@ -92,12 +92,6 @@ const addToCart = (index, priceItem) => {
         cart.set(index, product);
 
 
-    /*cart.forEach((value, key) => {
-        (`${index}: ${++value.count}`);
-        (`${index}: ${value.price+=(priceItem)}`);
-    });*/
-
-
  }
 
     document.querySelector('.body-counter').innerText=(counterCart());
@@ -118,17 +112,48 @@ const totalPrice = () => {
     return count
 }
 
+const cartVisy = document.getElementById('listy');
 
-
-/*
-const renderCart = () => {
-    let newElem = document.createElement("div");
-    newElem.append(123);
-
-    document.getElementById('modalId').appendChild(newElem);
+function renderCart() {
+    setTimeout(function () {
+    let itemCart = ``;
+    cart.forEach(({name, price, count})=>{
+        itemCart += `
+        <div class="items">
+            <span>${name}</span>
+            <span>${count}</span>
+            <span>${price}</span>
+        </div>
+        `;
+    });
+    cartVisy.innerHTML = itemCart;
+}, 1000);
 }
-*/
 
+function plusCount() {
+
+}
+
+/*function renderCart() {
+    const itemsList = document.getElementById('listy');
+    cart.forEach(({name, price, count})=>{
+        console.log(name, price, count)
+        let ads = 123
+        ads = name
+        let template = ``;
+        template += `
+        <div class="item-block">
+            <span>${name}</span>
+            <span>Кол-во: ${count}</span>
+            <span>Общая цена: ${price}</span>
+        </div>
+        `;
+    });
+    console.log(ads)
+itemsList.innerHTML = template;
+}*/
+
+/*<span>За 1 шт: ${price} руб.</span>*/
 
 
 

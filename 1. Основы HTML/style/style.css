@@ -216,7 +216,7 @@ body {
 .main_img {
     flex: 0 1 20%;
     margin-top: 25px;
-    margin-left: 48px;
+    margin-left: 44px;
 }
 
 .img_btn {
@@ -308,12 +308,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    list-style: none;
-    list-style-type: none;
 
 }
 
-.list-ul li span {
+.list-ul span {
     margin-top: -20px;
 
 }
@@ -367,9 +365,28 @@ body {
     margin: 0;
 }
 
+
 .listy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow-y: auto;
     height: 220px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+
+    min-height: 35px;
+
+    border: 0;
+    padding-right: -55px;
+    margin-bottom: 5px;
 }
 
 .btn-buy,
