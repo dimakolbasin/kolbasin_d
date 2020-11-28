@@ -309,5 +309,5 @@ let elem = document.querySelectorAll('.btn-minus')
         elem[i].addEventListener('click', downCounter);
   }*/
 
-
+/*sadasdasdsadas*/
 
