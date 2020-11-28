@@ -34,7 +34,7 @@
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/mail.png" alt="mail"></a>
                     </div>
 
-                    <div class="btn_nav open-cart" onclick="preloader(), renderCart()">
+                    <div class="btn_nav open-cart" onclick="openPopup()">
                     <a class="icon" href="#"><img class="img-nav" src="img/icon/basket.png" alt="basket"></a>
                     </div>
                     <div class="body-counter">
@@ -210,9 +210,10 @@
     </footer>
 
     <!--modal window-->
-<div class="modal_container">
-    <div class="modal">
-        <div class="modal-title">
+    <template id="modal">
+    <div class="modal_container">
+        <div class="modal">
+            <div class="modal-title">
             <h5 class="bascket-name">Корзина</h5>
         </div>
         <div class="modal-container">
@@ -230,7 +231,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="listy" id="listy">
+                <div class="lists" id="lists">
 
                 </div>
             </div>
@@ -239,13 +240,31 @@
             <button onclick="buyAllCarts();" class="btn-buy">купить сейчас</button>
             <button onclick="removeToCarts();" class="btn-drop">очистить корзину</button>
             <button onclick="closeCarts();" class="close-cart">выйти</button>
+            </div>
         </div>
     </div>
-</div>
+    </template>
+
+    <template id="product-line">
+         <div class="items" id="items" >
+            <span id="name"></span>
+            <span id="count"></span>
+            <span id="price"></span>
+        </div>
+    </template>
+
+     <template id="counterTemplate">
+      <div>
+        <button type="button" class="jsDecrease">-</button>
+        <input type="text" class="jsValue" value="0" />
+        <button type="button" class="jsIncrease">+</button>
+      </div>
+    </template>
+
+   <div id="modal-wrapper"></div>
     <!--<div class="modal-bg"></div>-->
 
     <!--preloader-->
-
 <div class="loader-container">
 
 <div class="loader">
@@ -267,8 +286,8 @@
 </div>
 
 </div>
-<!--modal iphone -->
 
+<!--modal iphone -->
 <div class="modal-phone-container">
 
 <div class="modal-phone">
