@@ -65,9 +65,16 @@ class ProductLine {
 
         const productContent = document.importNode(productLine.content, true);
 
+        this.removeItems = productContent.getElementById('items');
         this.productName = productContent.getElementById('name');
         this.productCount = productContent.getElementById('count');
         this.productPrice = productContent.getElementById('price');
+
+
+
+        productContent.getElementById('drop-product').onclick = (event) => {
+            this.dropItem();
+        };
 
         this.productName.innerText = product.name;
         this.productPrice.innerText = product.price;
@@ -90,6 +97,9 @@ class ProductLine {
         wrapper.appendChild(productContent);
     }
 
+    dropItem() {
+        this.removeItems.remove();
+    }
 
 }
 
