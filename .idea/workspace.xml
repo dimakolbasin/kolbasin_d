@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="28.1111">
+    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="1.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/javascript/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
       <workItem from="1606562053353" duration="22000" />
       <workItem from="1606573782823" duration="43000" />
       <workItem from="1606573930975" duration="1439000" />
-      <workItem from="1606805118501" duration="5594000" />
+      <workItem from="1606805118501" duration="13077000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1606553456019</created>
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606574149463</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.12">
+      <created>1606813010207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606813010207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +120,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="28.11" />
     <MESSAGE value="28.1111" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.1111" />
+    <MESSAGE value="1.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="580" y="172" key="FileChooserDialogImpl" timestamp="1606561634752">
@@ -141,10 +148,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1606562013603" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606574165728">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606813014195">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606574165728" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606813014195" />
     <state x="516" y="238" key="jetbrains.nodejs.interpreters-dialog" timestamp="1606561561094">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -153,5 +160,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1606553897685" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1606813534990">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1606813534990" />
   </component>
 </project>

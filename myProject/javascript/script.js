@@ -39,6 +39,9 @@ class Popup {
                 listProductsInCart.set(index, updatedProduct);
             }
 
+            productLine.deleteLine = () => {
+                listProductsInCart.delete(index);
+            }
         });
     }
 
@@ -48,24 +51,17 @@ class Popup {
         this.wrapper.innerHTML = '';
 
     }
-
-    removeProduct(product) {
-        listProductsInCart.delete();
-    }
 }
 
 let productLine = document.getElementById('product-line');
-/*let lists = document.getElementById('lists');
-let productName = document.getElementById('name');
-let productCount = document.getElementById('count');
-let productName = document.getElementById('price');*/
+
 
 class ProductLine {
     constructor(wrapper, product, index) {
 
         const productContent = document.importNode(productLine.content, true);
 
-        this.removeItems = productContent.getElementById('items');
+        this.lineElement = productContent.getElementById('items');
         this.productName = productContent.getElementById('name');
         this.productCount = productContent.getElementById('count');
         this.productPrice = productContent.getElementById('price');
@@ -73,7 +69,8 @@ class ProductLine {
 
 
         productContent.getElementById('drop-product').onclick = (event) => {
-            this.dropItem();
+            this.deleteLine();
+            this.lineElement.remove();
         };
 
         this.productName.innerText = product.name;
@@ -90,16 +87,15 @@ class ProductLine {
                 count: value,
                 price: product.price,
                 totalPrice: value * product.price
-            })
+            });
+            this.productPrice.innerText = value * product.price;
         };
 
 
         wrapper.appendChild(productContent);
     }
 
-    dropItem() {
-        this.removeItems.remove();
-    }
+
 
 }
 
