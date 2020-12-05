@@ -178,7 +178,7 @@ const closeModalPhone = () => {
 const listProductsInCart = new Map();
 
 
-let getCatalog = [
+let generalCatalog = [
     {name:'IPHONE XR 512GB', price:1300, count:0, totalPrice: 0},
     {name:'IPHONE XR 256GB', price:1100, count:0, totalPrice: 0},
     {name:'IPHONE XR 128GB', price:900, count:0, totalPrice: 0},
@@ -194,10 +194,10 @@ const newDiscount = (discount) => {
 };
 
 function getDiscount(index, discount){
-    let catalog = getCatalog;
+    let catalog = generalCatalog;
     catalog[index]['price'] = (newDiscount(discount)(catalog[index]['price']));
-    getCatalog = []
-    getCatalog = [...catalog]
+    generalCatalog = []
+    generalCatalog = [...catalog]
 
 };
 
@@ -209,7 +209,7 @@ getDiscount(1, 0.1);  // скидка 10 процентов на второй т
 
 const addToCart = (index, priceItem) => {
 
-    const catalog = getCatalog;
+    const catalog = generalCatalog;
     /*const product = catalog[index];*/
 
     if(listProductsInCart.has(index) === true) {
