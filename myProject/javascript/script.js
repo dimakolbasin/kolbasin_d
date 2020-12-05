@@ -55,7 +55,6 @@ class Popup {
 
 let productLine = document.getElementById('product-line');
 
-
 class ProductLine {
     constructor(wrapper, product, index) {
 
@@ -98,7 +97,6 @@ class ProductLine {
 
 
 }
-
 
 class Counter {
   set value(val) {
@@ -149,14 +147,6 @@ function openPopup() {
      }, 1000);
 }
 
-/*document.addEventListener('click', function(e){
-    let click = e.target.classList.value;
-    if (click === 'modal_bg show') {
-        modal.classList.remove('show');
-        modalBg.classList.remove('show');
-    }
-})*/
-
 /*preloader*/
 
 const preloader = () => {
@@ -179,10 +169,16 @@ const closeModalPhone = () => {
 
 /*busket add*/
 
+
+
+
+
+
 // const totalPriceCart = new Map();
 const listProductsInCart = new Map();
 
-const getCatalog = () => [
+
+let getCatalog = [
     {name:'IPHONE XR 512GB', price:1300, count:0, totalPrice: 0},
     {name:'IPHONE XR 256GB', price:1100, count:0, totalPrice: 0},
     {name:'IPHONE XR 128GB', price:900, count:0, totalPrice: 0},
@@ -191,11 +187,26 @@ const getCatalog = () => [
     {name:'IPHONE XR 128GB DUAL SIM', price:1300, count:0, totalPrice: 0}
 ];
 
+const newDiscount = (discount) => {
+    return (price) => {
+        return price - price * discount;
+    };
+};
+
+function getDiscount(index, discount){
+    let catalog = getCatalog;
+    catalog[index]['price'] = (newDiscount(discount)(catalog[index]['price']));
+    getCatalog = []
+    getCatalog = [...catalog]
+
+};
+
+
 /* )*/
 
 const addToCart = (index, priceItem) => {
 
-    const catalog = getCatalog();
+    const catalog = getCatalog;
     /*const product = catalog[index];*/
 
     if(listProductsInCart.has(index) === true) {
@@ -227,97 +238,5 @@ const counterCart = () => {
     return counter
 }
 
-/*const getTotalPrice = () => {
-    let count = 0;
-    listProductsInCart.forEach(value => count += value.price)
-    return count
-}*/
 
-/*=================================================*/
-
-/*const cartVisy = document.getElementById('lists');
-
-function renderCart() {
-    setTimeout(function () {
-    let itemCart = ``;
-    listProductsInCart.forEach(({name, price, count})=>{
-        itemCart += `
-        <div class="items">
-            <span>${name}</span>
-            <span>${count}</span>
-            <span>${price}</span>
-        </div>
-        `;
-    });
-    cartVisy.innerHTML = itemCart;
-}, 1000);
-}
-
-function plusCount() {
-
-}*/
-
-/*function renderCart() {
-    const itemsList = document.getElementById('listy');
-    cart.forEach(({name, price, count})=>{
-        console.log(name, price, count)
-        let ads = 123
-        ads = name
-        let template = ``;
-        template += `
-        <div class="item-block">
-            <span>${name}</span>
-            <span>Кол-во: ${count}</span>
-            <span>Общая цена: ${price}</span>
-        </div>
-        `;
-    });
-    console.log(ads)
-itemsList.innerHTML = template;
-}*/
-
-/*<span>За 1 шт: ${price} руб.</span>*/
-
-
-
-
-
-/*remove buscket=====================================*/
-
-/*function removeToCarts () {
-    document.getElementById('modalId').innerText = "";
-    counter = 0
-    document.querySelector('.body-counter').innerText = "";
-}*/
-
-
-
-
- /*counter========================================*/
-
-/*var counter = 0;
-
-function updateCounter() {
-    counter++;
-    document.querySelector('.body-counter').innerText = counter;
-}
-
-function downCounter() {
-    if (counter > 0){
-    counter--;
-}
-document.querySelector('.body-counter').innerText = counter;
-}
-
-let elements = document.querySelectorAll('.btn-plus')
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('click', updateCounter);
-  }
-
-let elem = document.querySelectorAll('.btn-minus')
-    for (let i = 0; i < elements.length; i++) {
-        elem[i].addEventListener('click', downCounter);
-  }*/
-
-/*sadasdasdsadas*/
 
