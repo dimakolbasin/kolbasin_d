@@ -201,8 +201,11 @@ function getDiscount(index, discount){
 
 };
 
+getDiscount(0, 0.5); // скидка 50 процентов на первый товар
+getDiscount(1, 0.1);  // скидка 10 процентов на второй товар
 
-/* )*/
+
+/**/
 
 const addToCart = (index, priceItem) => {
 

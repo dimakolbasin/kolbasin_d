@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="01.12">
+    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="05.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/javascript/script.js" afterDir="false" />
     </list>
@@ -70,7 +70,7 @@
       <workItem from="1606573930975" duration="1439000" />
       <workItem from="1606805118501" duration="14296000" />
       <workItem from="1607072737929" duration="5312000" />
-      <workItem from="1607155651962" duration="3665000" />
+      <workItem from="1607155651962" duration="4528000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1606553456019</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606823296985</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="05.12">
+      <created>1607167395386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607167395386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +138,8 @@
     <MESSAGE value="28.1111" />
     <MESSAGE value="1.12" />
     <MESSAGE value="01.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="01.12" />
+    <MESSAGE value="05.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="580" y="172" key="FileChooserDialogImpl" timestamp="1606561634752">
@@ -158,10 +166,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1606562013603" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606823301770">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607167399108">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606823301770" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607167399108" />
     <state x="516" y="238" key="jetbrains.nodejs.interpreters-dialog" timestamp="1606561561094">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
