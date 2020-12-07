@@ -187,29 +187,35 @@ let generalCatalog = [
     {name:'IPHONE XR 128GB DUAL SIM', price:1300, count:0, totalPrice: 0}
 ];
 
+let catalogDiscount = [];
+
 const newDiscount = (discount) => {
     return (price) => {
         return price - price * discount;
     };
 };
 
-function getDiscount(index, discount){
-    let catalog = generalCatalog;
-    catalog[index]['price'] = (newDiscount(discount)(catalog[index]['price']));
-    generalCatalog = []
-    generalCatalog = [...catalog]
+function applyDiscount(productName){
+    if (generalCatalog.some( item => item['name'] === productName ) === true) {
+        generalCatalog[generalCatalog.findIndex(item => item.name === productName)]['price'] = (newDiscount(0.3)(generalCatalog[generalCatalog.findIndex(item => item.name === productName)]['price'])); // скидка 30 процентов
+        catalogDiscount = [...generalCatalog];
+    } else {
+        catalogDiscount = [...generalCatalog];
+    }
 
 };
 
-getDiscount(0, 0.5); // скидка 50 процентов на первый товар
-getDiscount(1, 0.1);  // скидка 10 процентов на второй товар
+applyDiscount('IPHONE XR 512GB');  // скидка 30 процентов на первый товар
+
+applyDiscount('IPHONE XR 256GB');  // скидка 30 процентов на второй товар
+
 
 
 /**/
 
 const addToCart = (index, priceItem) => {
 
-    const catalog = generalCatalog;
+    const catalog = catalogDiscount;
     /*const product = catalog[index];*/
 
     if(listProductsInCart.has(index) === true) {
