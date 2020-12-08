@@ -1,4 +1,3 @@
-
 /*модальное window*/
 
 let modal = document.getElementById('modal');
@@ -26,7 +25,8 @@ class Popup {
         this.renderList();
         modalWrapper.appendChild(content);
     }
-/*constructor  =================*/
+
+    /*constructor  =================*/
     closePopup() {
         modalWrapper.innerHTML = '';
     }
@@ -66,7 +66,6 @@ class ProductLine {
         this.productPrice = productContent.getElementById('price');
 
 
-
         productContent.getElementById('drop-product').onclick = (event) => {
             this.deleteLine();
             this.lineElement.remove();
@@ -74,7 +73,6 @@ class ProductLine {
 
         this.productName.innerText = product.name;
         this.productPrice.innerText = product.price;
-
 
 
         this.index = index;
@@ -95,63 +93,62 @@ class ProductLine {
     }
 
 
-
 }
 
 class Counter {
-  set value(val) {
-    this.valueInput.value = isNaN(val) ? 0 : val;
-  }
+    set value(val) {
+        this.valueInput.value = isNaN(val) ? 0 : val;
+    }
 
-  get value() {
-    return +this.valueInput.value;
-  }
+    get value() {
+        return +this.valueInput.value;
+    }
 
-  constructor(wrapper) {
-    const template = document.getElementById("counterTemplate");
-    const content = document.importNode(template.content, true);
+    constructor(wrapper) {
+        const template = document.getElementById("counterTemplate");
+        const content = document.importNode(template.content, true);
 
-    this.valueInput = content.querySelector(".jsValue");
-    this.decreaseButton = content.querySelector(".jsDecrease");
-    this.increaseButton = content.querySelector(".jsIncrease");
+        this.valueInput = content.querySelector(".jsValue");
+        this.decreaseButton = content.querySelector(".jsDecrease");
+        this.increaseButton = content.querySelector(".jsIncrease");
 
-    this.valueInput.onblur = (event) => (this.value = event.target.value);
-    this.increaseButton.onclick = () => this.increase();
-    this.decreaseButton.onclick = () => this.decrease();
+        this.valueInput.onblur = (event) => (this.value = event.target.value);
+        this.increaseButton.onclick = () => this.increase();
+        this.decreaseButton.onclick = () => this.decrease();
 
-    wrapper.appendChild(content);
-  }
+        wrapper.appendChild(content);
+    }
 
-  increase() {
-    this.value++;
-    this.updateCounter(this.value);
-  }
+    increase() {
+        this.value++;
+        this.updateCounter(this.value);
+    }
 
-  decrease() {
-    this.value--;
-    this.updateCounter(this.value);
-  }
+    decrease() {
+        this.value--;
+        this.updateCounter(this.value);
+    }
 }
 
 
 function openPopup() {
-     preloader();
+    preloader();
     // renderCart();
-     setTimeout(function() {
-         /*modal.classList.add('show');
-         modalContainer.classList.add('show');*/
-         let loader = document.querySelector('.loader');
-         loader.classList.remove('show');
-         const popup = new Popup();
+    setTimeout(function () {
+        /*modal.classList.add('show');
+        modalContainer.classList.add('show');*/
+        let loader = document.querySelector('.loader');
+        loader.classList.remove('show');
+        const popup = new Popup();
 
-     }, 1000);
+    }, 1000);
 }
 
 /*preloader*/
 
 const preloader = () => {
-      let loader = document.querySelector('.loader');
-      loader.classList.add('show');
+    let loader = document.querySelector('.loader');
+    loader.classList.add('show');
 }
 
 /*modal phone*/
@@ -170,24 +167,20 @@ const closeModalPhone = () => {
 /*busket add*/
 
 
-
-
-
-
 // const totalPriceCart = new Map();
 const listProductsInCart = new Map();
 
 
 let generalCatalog = [
-    {name:'IPHONE XR 512GB', price:1300, count:0, totalPrice: 0},
-    {name:'IPHONE XR 256GB', price:1100, count:0, totalPrice: 0},
-    {name:'IPHONE XR 128GB', price:900, count:0, totalPrice: 0},
-    {name:'IPHONE XR 64GB', price:799, count:0, totalPrice: 0},
-    {name:'IPHONE XR 64GB DUAL SIM', price:1000, count:0, totalPrice: 0},
-    {name:'IPHONE XR 128GB DUAL SIM', price:1300, count:0, totalPrice: 0}
+    {name: 'IPHONE XR 512GB', price: 1300, count: 0, totalPrice: 0},
+    {name: 'IPHONE XR 256GB', price: 1100, count: 0, totalPrice: 0},
+    {name: 'IPHONE XR 128GB', price: 900, count: 0, totalPrice: 0},
+    {name: 'IPHONE XR 64GB', price: 799, count: 0, totalPrice: 0},
+    {name: 'IPHONE XR 64GB DUAL SIM', price: 1000, count: 0, totalPrice: 0},
+    {name: 'IPHONE XR 128GB DUAL SIM', price: 1300, count: 0, totalPrice: 0}
 ];
 
-let catalogDiscount = [];
+const productsWithDiscount = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
 
 const newDiscount = (discount) => {
     return (price) => {
@@ -195,35 +188,40 @@ const newDiscount = (discount) => {
     };
 };
 
-function applyDiscount(productName){
-    if (generalCatalog.some( item => item['name'] === productName ) === true) {
-        generalCatalog[generalCatalog.findIndex(item => item.name === productName)]['price'] = (newDiscount(0.3)(generalCatalog[generalCatalog.findIndex(item => item.name === productName)]['price'])); // скидка 30 процентов
-        catalogDiscount = [...generalCatalog];
-    } else {
-        catalogDiscount = [...generalCatalog];
-    }
 
-};
+const transformPriceByDiscount = (product) => {
+    return {
+        ...product,
+        price: (newDiscount(0.5)(product.price)) // add discount 50%
+    };
+}
 
-applyDiscount('IPHONE XR 512GB');  // скидка 30 процентов на первый товар
 
-applyDiscount('IPHONE XR 256GB');  // скидка 30 процентов на второй товар
+function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
 
+    return generalCatalog.map((product) => {
+        if(productsWithDiscount.includes(product.name) === true){
+            return transformPriceByDiscount(product);
+        } else {
+            return product;
+        }
+
+    })
+}
 
 
 /**/
 
 const addToCart = (index, priceItem) => {
 
-    const catalog = catalogDiscount;
+    const catalog = getCatalogWithDiscount(generalCatalog, productsWithDiscount);
     /*const product = catalog[index];*/
 
-    if(listProductsInCart.has(index) === true) {
+    if (listProductsInCart.has(index) === true) {
         let productFromCart = listProductsInCart.get(index)
         ++productFromCart.count;
         productFromCart.totalPrice = productFromCart.count * productFromCart.price;
         listProductsInCart.set(index, productFromCart);
-
 
 
     } else {
@@ -234,10 +232,10 @@ const addToCart = (index, priceItem) => {
         listProductsInCart.set(index, product);
 
 
- }
+    }
 
-    document.querySelector('.body-counter').innerText=(counterCart());
- }
+    document.querySelector('.body-counter').innerText = (counterCart());
+}
 
 
 const counterCart = () => {
