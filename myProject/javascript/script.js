@@ -200,7 +200,7 @@ const transformPriceByDiscount = (product) => {
 function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
 
     return generalCatalog.map((product) => {
-        if(productsWithDiscount.includes(product.name) === true){
+        if(productsWithDiscount.includes(product.name){
             return transformPriceByDiscount(product);
         } else {
             return product;
