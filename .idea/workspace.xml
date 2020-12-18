@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="07.12">
+    <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="18.12 переход на бэм">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/img/favicon/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/img/favicon/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/img/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/img/favicon/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/javascript/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +79,7 @@
       <workItem from="1607672087602" duration="524000" />
       <workItem from="1608152982117" duration="999000" />
       <workItem from="1608266797627" duration="7138000" />
-      <workItem from="1608290625838" duration="2260000" />
+      <workItem from="1608290625838" duration="3317000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1606553456019</created>
@@ -162,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607421659749</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="18.12 переход на бэм">
+      <created>1608294515683</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608294515683</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +191,7 @@
     <MESSAGE value="01.12" />
     <MESSAGE value="05.12" />
     <MESSAGE value="07.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="07.12" />
+    <MESSAGE value="18.12 переход на бэм" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.12 переход на бэм" />
   </component>
 </project>
