@@ -20,7 +20,7 @@ class Popup {
             this.removeAllProducts();
         };
 
-        this.wrapper = content.querySelector('.lists');
+        this.wrapper = content.querySelector('.list__product');
         /*const productLine = new ProductLine(wrapper);*/
         this.renderList();
         modalWrapper.appendChild(content);
@@ -200,7 +200,7 @@ const transformPriceByDiscount = (product) => {
 function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
 
     return generalCatalog.map((product) => {
-        if(productsWithDiscount.includes(product.name){
+        if(productsWithDiscount.includes(product.name)){
             return transformPriceByDiscount(product);
         } else {
             return product;

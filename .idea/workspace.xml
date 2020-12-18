@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dbf304fe-ea68-480a-8d27-d0d6bcad112c" name="Default Changelist" comment="07.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/img/favicon/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/img/favicon/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/img/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/img/favicon/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/javascript/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +79,11 @@
       <workItem from="1607187004539" duration="13525000" />
       <workItem from="1607339473841" duration="20274000" />
       <workItem from="1607420273804" duration="101000" />
-      <workItem from="1607421618852" duration="21000" />
+      <workItem from="1607421618852" duration="51000" />
+      <workItem from="1607672087602" duration="524000" />
+      <workItem from="1608152982117" duration="999000" />
+      <workItem from="1608266797627" duration="7138000" />
+      <workItem from="1608290625838" duration="2260000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1606553456019</created>
@@ -146,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607417228720</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="07.12">
+      <created>1607421659749</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607421659749</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,55 +189,5 @@
     <MESSAGE value="05.12" />
     <MESSAGE value="07.12" />
     <option name="LAST_COMMIT_MESSAGE" value="07.12" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="426" y="108" key="#Inspections" timestamp="1607347336073">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="426" y="108" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1607347336073" />
-    <state x="480" y="166" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607420042730">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="480" y="166" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1607420042730" />
-    <state x="580" y="172" key="FileChooserDialogImpl" timestamp="1606561634752">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="580" y="172" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1606561634752" />
-    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1606562023457">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1606562023457" />
-    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1606562023456">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1606562023456" />
-    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1606562023456">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1606562023456" />
-    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1606562023457">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1606562023457" />
-    <state x="301" y="75" key="SettingsEditor" timestamp="1606562013603">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1606562013603" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607417236074">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607417236074" />
-    <state x="516" y="238" key="jetbrains.nodejs.interpreters-dialog" timestamp="1606561561094">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="516" y="238" key="jetbrains.nodejs.interpreters-dialog/0.0.1600.860@0.0.1600.860" timestamp="1606561561094" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1606553897685">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1606553897685" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1606813534990">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1606813534990" />
   </component>
 </project>
