@@ -436,7 +436,7 @@ body {
 /*preloader===================
 =============================*/
 
-.loader__container {
+.loader {
     visibility: hidden;
     position: fixed;
     top: 0;
@@ -449,11 +449,11 @@ body {
     align-items: center;
 }
 
-.loader.show {
+.loader__container.show {
     visibility: visible;
 }
 
-.loader {
+.loader__container {
     /*position: relative;*/
     width: 180px;
     height: 180px;
@@ -462,7 +462,7 @@ body {
     visibility: hidden;
 }
 
-.loader .wBall {
+.loader__container .wBall {
     position: absolute;
     width: 171px;
     height: 171px;
@@ -471,7 +471,7 @@ body {
     animation: orbit 3.3225s infinite;
 }
 
-.loader .wBall .wInnerBall {
+.loader__container .wBall .wInnerBall {
     position: absolute;
     width: 23px;
     height: 23px;
@@ -481,23 +481,23 @@ body {
     border-radius: 23px;
 }
 
-.loader #wBall_1 {
+.loader__container #wBall_1 {
     animation-delay: 0.726s;
 }
 
-.loader #wBall_2 {
+.loader__container #wBall_2 {
     animation-delay: 0.143s;
 }
 
-.loader #wBall_3 {
+.loader__container #wBall_3 {
     animation-delay: 0.2865s;
 }
 
-.loader #wBall_4 {
+.loader__container #wBall_4 {
     animation-delay: 0.4295s;
 }
 
-.loader #wBall_5 {
+.loader__container #wBall_5 {
     animation-delay: 0.583s;
 }
 
@@ -718,7 +718,7 @@ body {
         justify-content: flex-start;
     }
 
-    .loader {
+    .loader__container {
         top: -1050px;
 
     }
@@ -828,7 +828,7 @@ body {
         justify-content: flex-start;
     }
 
-    .loader {
+    .loader__container {
         top: -700px;
 
     }
@@ -943,7 +943,7 @@ body {
         justify-content: flex-start;
     }
 
-    .loader {
+    .loader__container {
         top: -1050px;
 
     }
@@ -1093,7 +1093,7 @@ body {
         justify-content: flex-start;
     }
 
-    .loader {
+    .loader__container {
         top: -1800px;
 
     }

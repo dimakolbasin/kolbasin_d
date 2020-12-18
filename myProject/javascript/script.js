@@ -137,7 +137,7 @@ function openPopup() {
     setTimeout(function () {
         /*modal.classList.add('show');
         modalContainer.classList.add('show');*/
-        let loader = document.querySelector('.loader');
+        let loader = document.querySelector('.loader__container');
         loader.classList.remove('show');
         const popup = new Popup();
 
@@ -147,7 +147,7 @@ function openPopup() {
 /*preloader*/
 
 const preloader = () => {
-    let loader = document.querySelector('.loader');
+    let loader = document.querySelector('.loader__container');
     loader.classList.add('show');
 }
 
