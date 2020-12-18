@@ -12,11 +12,11 @@ class Popup {
         const content = document.importNode(modal.content, true);
 
 
-        content.querySelector('.close-cart').onclick = (event) => {
+        content.querySelector('.modal__btn-close').onclick = (event) => {
             this.closePopup();
         };
 
-        content.querySelector('.btn-drop').onclick = (event) => {
+        content.querySelector('.modal__btn-drop').onclick = (event) => {
             this.removeAllProducts();
         };
 

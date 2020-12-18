@@ -389,17 +389,17 @@ body {
     margin-bottom: 5px;
 }
 
-.btn-buy,
-.btn-drop,
-.close-cart {
+.modal__btn-buy,
+.modal__btn-drop,
+.modal__btn-close {
     background-color: #a1c6ce;
     border-radius: 5px;
 
 }
 
-.btn-buy:hover,
-.btn-drop:hover,
-.close-cart:hover {
+.modal__btn-buy:hover,
+.modal__btn-drop:hover,
+.modal__btn-close:hover {
     background-color: #839ea3;
     cursor: pointer;
 }
@@ -591,18 +591,18 @@ body {
 
 
 
-.modal__phone-text {
+.modal-phone__text {
     margin-top: 30px;
     background-color: #b9d7dd;
 }
 
 
 
-.modal__phone-text:active {
+.modal-phone__text:active {
     background-color: #839ea3;
 }
 
-.modal__phone-item {
+.modal-phone__item {
     text-decoration: none;
     border-radius: 5px;
     font-weight: 500;
