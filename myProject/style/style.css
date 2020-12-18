@@ -729,7 +729,7 @@ body {
         width: 370px;
     }
 
-    .list {
+    .list__container {
         overflow-y: auto;
         height: 200px;
     }
@@ -839,7 +839,7 @@ body {
         width: 370px;
     }
 
-    .list {
+    .list__container {
         overflow-y: auto;
         height: 200px;
     }
@@ -954,7 +954,7 @@ body {
         width: 370px;
     }
 
-    .list {
+    .list__container {
         overflow-y: auto;
         height: 200px;
     }
@@ -1104,7 +1104,7 @@ body {
         width: 370px;
     }
 
-    .list {
+    .list__container {
         overflow-y: auto;
         height: 200px;
     }
