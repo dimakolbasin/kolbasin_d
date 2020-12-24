@@ -1,4 +1,4 @@
-document.onclick = event => {
+/*document.onclick = event => {
     if (event.target.classList.contains('btn-plus')) {
         const dataId = event.target.dataset.id;
         addToCart(dataId);
@@ -9,7 +9,21 @@ document.onclick = event => {
     } else if (event.target.classList.contains('modal-phone__text')) {
         closeModalPhone()
     }
+}*/
+
+const btnPlusArr = document.querySelectorAll('.btn-plus')
+
+for (let btnPlus of btnPlusArr) {
+    btnPlus.onclick = event => {
+        const dataId = event.target.dataset.id;
+        addToCart(dataId);
+    }
 }
+
+/*btnPlus.onclick = event => {
+    const dataId = event.target.dataset.id;
+    addToCart(dataId);
+}*/
 
 /*модальное window*/
 
