@@ -1,3 +1,16 @@
+document.onclick = event => {
+    if (event.target.classList.contains('btn-plus')) {
+        const dataId = event.target.dataset.id;
+        addToCart(dataId);
+    } else if (event.target.classList.contains('open-carts')){
+        openPopup()
+    } else if (event.target.classList.contains('burger-nav')) {
+        modalPhone()
+    } else if (event.target.classList.contains('modal-phone__text')) {
+        closeModalPhone()
+    }
+}
+
 /*модальное window*/
 
 let modal = document.getElementById('modal');
@@ -212,7 +225,10 @@ function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
 
 /**/
 
-const addToCart = (index, priceItem) => {
+
+
+
+const addToCart = (index) => {
 
     const catalog = getCatalogWithDiscount(generalCatalog, productsWithDiscount);
     /*const product = catalog[index];*/

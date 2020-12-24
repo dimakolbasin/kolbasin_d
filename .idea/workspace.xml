@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/javascript/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,9 @@
       <workItem from="1607672087602" duration="524000" />
       <workItem from="1608152982117" duration="999000" />
       <workItem from="1608266797627" duration="7138000" />
-      <workItem from="1608290625838" duration="4325000" />
+      <workItem from="1608290625838" duration="5089000" />
+      <workItem from="1608731526643" duration="85000" />
+      <workItem from="1608805354588" duration="5686000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1606553456019</created>
@@ -180,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608297768612</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="18.12 переход на бэм">
+      <created>1608298557254</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608298557254</updated>
+    </task>
+    <task id="LOCAL-00016" summary="18.12 переход на бэм">
+      <created>1608298708744</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608298708744</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,5 +223,23 @@
     <MESSAGE value="07.12" />
     <MESSAGE value="18.12 переход на бэм" />
     <option name="LAST_COMMIT_MESSAGE" value="18.12 переход на бэм" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/myProject/index.html</url>
+          <line>36</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/myProject/index.html</url>
+          <line>235</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
