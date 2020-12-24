@@ -1,29 +1,31 @@
-/*document.onclick = event => {
-    if (event.target.classList.contains('btn-plus')) {
-        const dataId = event.target.dataset.id;
-        addToCart(dataId);
-    } else if (event.target.classList.contains('open-carts')){
-        openPopup()
-    } else if (event.target.classList.contains('burger-nav')) {
-        modalPhone()
-    } else if (event.target.classList.contains('modal-phone__text')) {
-        closeModalPhone()
-    }
-}*/
+/*oclicks*/
+
+const modalPh = document.querySelector('.burger-nav')
+
+modalPh.onclick = event => {
+    modalPhone();
+}
 
 const btnPlusArr = document.querySelectorAll('.btn-plus')
 
 for (let btnPlus of btnPlusArr) {
+    const dataId = btnPlus.dataset.id
     btnPlus.onclick = event => {
-        const dataId = event.target.dataset.id;
         addToCart(dataId);
     }
 }
 
-/*btnPlus.onclick = event => {
-    const dataId = event.target.dataset.id;
-    addToCart(dataId);
-}*/
+const clModalPh = document.querySelector('.modal-phone__text')
+
+clModalPh.onclick = event => {
+    closeModalPhone();
+}
+
+const openCart = document.querySelector('.open-cart')
+
+openCart.onclick = event => {
+        openPopup();
+    }
 
 /*модальное window*/
 
@@ -238,8 +240,6 @@ function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
 
 
 /**/
-
-
 
 
 const addToCart = (index) => {
